@@ -37,3 +37,5 @@ def product_with_product_varient(request,product_id):
     productvarient=ProductVarient.objects.filter(product=productsid)
     return render(request,'product_with_product_varient.html',{'product':productsid,'productvarient':productvarient})
     
+def none():
+    pass
